@@ -129,8 +129,8 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 
 
-L.easyButton('<a href="Final1.html"><img class="leaf" src="left.png"></a>', function(btn, map){
-  location.replace("Final1.html")
+L.easyButton('<a href="index.html"><img class="leaf" src="left.png"></a>', function(btn, map){
+  location.replace("index.html")
   }).addTo(map);
 
  
