@@ -1,0 +1,235 @@
+
+
+#map { height: 100%; }
+
+html, body {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: 0;
+}
+/* back arrow */
+.leaflet-bottom img{    
+  position: relative;
+  top:10px;
+} 
+
+/* back arrow */
+ .leaf{
+  height: 26px;
+  align-items: center;
+  padding-right: 30%;
+  padding-top: 2px;
+} 
+
+#button-wrapper {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  border: 1px solid red;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+
+.map{
+    max-width: 100%;
+    height: auto;
+}
+
+/* .gdot{
+    position:relative;
+    left: 62%;
+    bottom: 50.2%;
+    height: 12px;
+    cursor: pointer;
+}
+
+.gdot:hover{
+    transform: scale(1.5);
+    transition: all .3s ease-in-out;
+} */
+
+.pic{
+    /* position:absolute; */
+    /* top: 12%; */
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /* padding-bottom: 10px; */
+    /* padding-top: 10px; */
+    border: black 1px solid;
+}
+
+ /* .leaflet-popup{ */
+  /* position: fixed; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%) scale(0); */
+  /* transition: 200ms ease-in-out; */
+  /* border: 1px solid black; */
+  /* border-radius: 10px; */
+  /* z-index: 10; */
+  /* background-color: white; */
+  /* width: 800px; */
+  /* height: 150px; */
+  /* max-width: 80%; */
+  /* overflow-y: auto; */
+  /* background-color:navajowhite; */
+/* } */
+
+.about{
+    /* position:absolute; */
+    text-align: center;
+    left: 50%;
+}
+
+.resume{
+
+  text-align: center;
+  left: 50%;
+  font-size: 20px;
+}
+.design{
+    /* position: absolute; */
+    /* top: 38%; */
+    left: 53%;
+    text-align: center;
+}
+
+/* .Ingredients_{
+    text-align:justify;
+     position: absolute; 
+    left: 28%;
+    padding-right: 8px;
+    top: 48%;
+} */
+
+.link{
+    /* position: absolute; */
+    top: 60%;
+    left: 53.2%;
+    text-align: center;
+}
+
+/* .rise_{
+    text-align:justify;
+    position: absolute; 
+    left: 28%;
+    padding-right: 8px;
+    top: 70%;
+} */
+
+
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 800px;
+    height: 500px;
+    max-width: 80%;
+    overflow-y: auto;
+    background-color:navajowhite;
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    /* padding: 10px 15px; */
+    text-align:justify;
+    /* position: absolute; */
+    left: 28%;
+    padding-right: 8px;
+    top: 19%;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+
+
+  *Legend specific*/
+.legend {
+  padding: 6px 8px;
+  font: 14px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);*/
+  /*border-radius: 5px;*/
+  line-height: 24px;
+  color: #555;
+}
+.legend h4 {
+  text-align: center;
+  font-size: 16px;
+  margin: 2px 12px 8px;
+  color: #777;
+}
+
+.legend span {
+  position: relative;
+  bottom: 3px;
+}
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin: 0 8px 0 0;
+  opacity: 0.7;
+}
+
+.legend i.icon {
+  background-size: 18px;
+  background-color: rgba(255, 255, 255, 1);
+}
